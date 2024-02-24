@@ -1,0 +1,36 @@
+/* -- Common Styles -- */
+
+.textCenter{
+    text-align: center;
+}
+
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexDirection{
+    flex-direction: column;
+}
+
+.margin10{
+    margin-bottom: 6%;
+}
+
+.width100Per{
+    width: 100%;
+}
+
+.height10Per{
+    height: 8%;
+}
+
+.height100Per{
+    height: 100%;
+}
+
+.radius10{
+    border-radius: 10px;
+}
+

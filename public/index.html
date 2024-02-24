@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link css and js file from other folder -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/srcStyles.css">
+    <script src="https://kit.fontawesome.com/a820812e42.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    
+    <title>Chordify</title>
+    <link rel="icon" type="image/x-icon" href="./Image/favicon2.png">
+
+</head>
+
+<body>
+
+    <!-- ========================= ==> Music wrapper <== ========================= -->
+    
+    <!-- Alert -->
+    <div class="alertContainer flexDirection" style="position: absolute; top: 0; right: 0; width: 17%; height: auto; display: flex; align-items: center; padding: 1%; z-index: 5;"></div>
+
+    <div class="mainMusicContainer displayFlex">
+
+
+        <div class="musicContainer">
+
+            <div id="avatarMainSection" class="flexDirection">
+                <div id="avatarXmark">
+                    <i id="backBtn" class="fa-solid fa-xmark fa-xl"></i>
+                </div>
+
+                <div class="uploadedAvatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png" id="avatarImage">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png" id="bgAvatarImage">
+                </div>
+
+                <label class="displayFlex" for="uploadImg">Upload Avatar</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="uploadImg">
+
+                <div id="inputUrlWrapper">
+                    <div id="avatarImageInput" class="displayFlex">
+                        <i class="fa-solid fa-link fa-lg"></i>
+                    </div>
+                    <input type="url" accept="image/png, image/jpeg, image/jpg" name="uploadImg" id="uploadImg">
+                    <div id="saveBtn" class="displayFlex">
+                        <i class="fa-solid fa-check fa-lg"></i>
+                    </div>
+                </div>
+            
+                <div class="defaultAvatarSection">
+                    <div class="avatarHeading">Some Avatar For You</div>
+                    <div id="avatarWrapper"></div>
+                </div>
+
+            </div>
+
+            <div id="settingSection">
+
+                <div id="settingHeading" class="settingInnerDiv">
+                    <h3>Settings</h3>
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                </div>
+
+                <hr>
+
+                <div id="myAccountSetting" class="settingInnerDiv">
+                    <div>
+                        <div>My Account</div>
+                    </div>
+                    
+                    <div id="myAccountSettingInnerFoldDiv" class="SettingInnerFoldDiv">
+                        <table style="width:max-content; text-wrap: nowrap;">
+                            <tr>
+                              <td>Name</td>
+                              <td>&nbsp:&nbsp</td>
+                              <td id="myAccountUserName">Maria Anders</td>
+                            </tr>
+                            <tr>
+                              <td>Email</td>
+                              <td>&nbsp:&nbsp</td>
+                              <td id="myAccountEmail">Aalok@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>&nbsp:&nbsp</td>
+                                <td id="myAccountPassword"><i class="fa-solid fa-key"></i> encrypted</td>
+                              </tr>
+                          </table>
+                    </div>
+                </div>
+
+                
+                <hr>
+
+                <div id="avatarSetting" class="settingInnerDiv">
+                    <div>
+                        <div>Avatar</div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="resetPasswordSetting" class="settingInnerDiv">
+                    <div>
+                        <div>Reset Password</div>
+                    </div>
+
+                    <div id="resetPasswordSettingInnerFoldDiv" class="SettingInnerFoldDiv"> -->
+                        
+                        <!-- Password Input Section -->
+                        
+                        <label for="password">Old Password</label>
+                       
+                        <div class="resetPasswordInputWrapper">
+                            <i class="fa-solid fa-lock fa-ml"></i>
+                            <input type="password" id="resetPasswordOldPassword" name="password" max="12" min="6" placeholder="*******" maxlength="12">
+                            <i class="fa-regular fa-eye fa-ml"></i>
+                        </div>
+    
+                        <!-- Conform Password Input Section  -->
+    
+                        <label for="confirmPassword">New Password</label>
+                       
+                        <div class="resetPasswordInputWrapper">
+                            <i class="fa-solid fa-lock fa-ml"></i>
+                            <input type="password" id="resetPasswordNewPassword" name="password" max="12" min="6" placeholder="*******" maxlength="12">
+                            <i class="fa-regular fa-eye fa-ml"></i>
+                        </div>
+
+                        <label for="confirmPassword">Confirm Password</label>
+                       
+                        <div class="resetPasswordInputWrapper">
+                            <i class="fa-solid fa-lock fa-ml"></i>
+                            <input type="password" id="resetPasswordConfirmPassword" name="password" max="12" min="6" placeholder="*******" maxlength="12">
+                            <i class="fa-regular fa-eye fa-ml"></i>
+                        </div>
+
+                        <div id="resetPasswordChangeBtn" class="displayFlex">Change Password</div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="themeSetting" class="settingInnerDiv">
+                    <div>
+                        <div>Theme</div>
+                    </div>
+                    
+                    <div class="tdnn">
+                        <div class="moon"></div>
+                   </div>
+                </div>
+
+                <hr>
+
+                <div id="deleteAccountSetting" class="settingInnerDiv">
+                    <div>
+                        <div>Delete Account</div>
+                    </div>
+
+                    <div id="deleteAccountSettingInnerFoldDiv" class="SettingInnerFoldDiv">
+                        <div>Deleting your account will permanently erase all your fruity data. This action cannot be undone.</div>
+                        <div class="displayFlex">
+                            <div>Confirm</div>
+                            <div>Cancel</div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="logoutAccountSetting" class="settingInnerDiv">
+                    <div>
+                        <div>
+                            Logout  <i class="fa-solid fa-right-from-bracket"></i>
+                        </div> 
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+            <div id="partyMusicSection">
+
+                <div id="partyMusicHeading" class="partyMusicInnerDiv">
+                    <h3>Party Music mode</h3>
+                    <i class="fa-solid fa-xmark fa-lg"></i>
+                </div>
+
+                <hr>
+
+                <div id="createPartyMode" class="partyMusicInnerDiv">
+                    <div>
+                        <div>Create Party</div>
+                    </div>
+                    
+                    <div id="createPartyModeInnerFoldDiv" class="partyMusicInnerFoldDiv">
+                        <div class="partyNameInputWrapper">
+                            <label for="partyNameInput">Party Name</label>    
+                            <input type="text" id="partyNameInput" max="20" min="6" name="partyNameInput" placeholder="Chordify Party" maxlength="30">
+                        </div>
+        
+                        <div id="partyCode">Party Code : &nbsp;<div>391763</div></div>
+
+                        <input type="button" value="Create Party">
+                    </div>
+                </div>
+
+                
+                <hr>
+
+                <div id="joinPartyMode" class="partyMusicInnerDiv">
+                    <div>
+                        <div>Join Party</div>
+                    </div>
+
+                    <div id="joinPartyModeInnerFoldDiv" class="partyMusicInnerFoldDiv">
+                        <div class="partyNameInputWrapper">
+                            <label for="partyCodeInput">Party Code</label>    
+                            <input type="text" id="partyCodeInput" max="20" min="6" name="partyCodeInput" placeholder="Code" maxlength="20">
+                        </div>
+
+                        <input type="button" value="Create Party">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="partyDetailsSection">
+                    <div>Party Owen By</div>
+                    <div id="partyDetailsPartyName">
+                        <img src="data:image/jpeg;base64,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" alt="Ower">
+                        <div id="partyOwnerNameWrapper">
+                            <div>Aalok</div>
+                            <div>after life fill like</div>
+                        </div>
+                    </div>
+
+                    <div>Party Join By</div>
+                    <div id="partyDetailsPartyJoinUsers">
+
+                    </div>
+                </div>
+
+            </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            <div class="loadingSection">
+                <img src="./Image/Logo (2).png" alt="" style="width: 30vw; opacity: 0;" id="loadingImg">
+            </div>
+
+            <div class="subMusicContainer">
+                <div class="sideBar">
+                    <div class="logoSection">
+                        <img src="./Image/Logo (2).png" class="logoImg">
+                    </div>
+                    <div class="playerSection">
+                        <div class="sideNavbar">
+                            <nav>
+                                <ul style="color: rgb(51, 129, 142); translate: none; rotate: none; scale: none; transform: translate(20px, 0px);">
+                                    <div class="sideNavbarIcon">
+                                        <i class="fa-solid fa-house"></i>                                          
+                                    </div>
+                                    <li>Home</li>
+                                </ul>
+                                
+                                <ul>
+                                    <div class="sideNavbarIcon">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                    <li>My Fruity</li>
+                                </ul>
+                                
+                                <ul style="display: none;">
+                                    <div class="sideNavbarIcon">
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                    <li>User Data</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="sideNavbarSetting">
+                            <nav>
+                                <ul id="settingBtn" style="margin-top: 180%;">
+                                    <div class="sideNavbarIcon">
+                                        <i class="fa-solid fa-gear"></i>                                      
+                                    </div>
+                                    <li>Setting</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainSection">
+                    <div class="navSection">
+                        <div class="searchSection displayFlex">
+                            <div class="searchIcon">
+                                <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+                            </div>
+                            <input type="text" class="searchBox" placeholder="Search">
+                        </div>
+
+                        <div class="avatarSection">
+                            <div class="avatar displayFlex">
+                                
+                                <svg height="100%" style="aspect-ratio: 1/1;">
+                                    <circle cx="50%" cy="50%" r="40%" stroke="#ffd424" stroke-width="10%" fill="#f89512" /> -->
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="rgb(255, 212, 36)" version="1.1" id="Capa_1" height="70%" viewBox="-46.89 -173.89 562.64 562.64" xml:space="preserve">
+    
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <g> <path d="M235.554,0C109.784,0,3.532,102.367,3.532,223.536c0,68.314,33.927,149.905,86.43,207.865l1.484,1.639l2.164-0.429 c0.553-0.1,12.578-2.637,17.603-11.834c12.317,10.095,23.253,11.085,34.757,6.961c5.115,9.843,7.103,20.559-6.606,24.445 c-12.906,3.675-30.152-1.094-42.886-3.025c-21.219-3.222-66.178-4.156-87.61-3.358c-10.092,0.381-10.128,16.082,0,15.701 c25.874-0.958,74.494,1.606,100.092,5.241c12.808,1.82,29.16,4.341,41.437-1.623c21.209-10.303,17.637-27.875,9.105-44.146 c6.404-3.907,13.235-8.844,20.638-14.15c-20.528-9.017-47.406-49.355-65.764-84.528c-12.99-24.902-38.401-77.676-35.536-104.35 c-15.867,10.896-28.212,20.386-34.91,32.837c-1.854-11.745-2.852-23.271-2.852-34.43c0-96.018,100.557-160.516,194.469-160.516 c116.331,0,194.46,83,194.46,160.516c0,11.093-0.897,22.456-2.625,33.953c-6.744-12.219-18.987-21.612-34.652-32.36 c2.869,26.674-22.537,79.447-35.533,104.35c-18.351,35.173-45.236,75.52-65.762,84.528c28.204,20.238,47.103,34.46,72.189,11.085 c5.133,7.975,14.463,12.158,14.939,12.359l2.601,1.117l1.884-2.115c51.359-57.743,84.528-138.493,84.528-205.742 C467.575,102.357,361.322,0,235.554,0z"/> <path d="M93.646,209.917c-0.99,0-1.863,0.232-2.673,0.589c-0.287,0.126-0.601,0.218-0.87,0.391 c-11.407,7.468,3.939,55.427,31.244,107.756c24.917,47.752,53.217,82.208,66.652,82.208c0.25,0,0.475-0.072,0.713-0.092 c0.988-0.108,1.923-0.353,2.725-0.878c0.878-0.581,1.569-1.479,2.166-2.528c0.03-0.061,0.062-0.145,0.092-0.204 c6.885-12.788-5.973-57.491-31.038-105.532C137.771,243.93,107.46,209.909,93.646,209.917z"/> <path d="M350.25,318.652c27.303-52.329,42.647-100.296,31.242-107.756c-0.269-0.172-0.585-0.265-0.874-0.391 c-0.806-0.356-1.679-0.589-2.669-0.589c-13.806,0-44.126,34.013-69.012,81.709c-25.062,48.049-37.926,92.756-31.041,105.536 c0.031,0.063,0.067,0.14,0.1,0.2c0.589,1.058,1.286,1.964,2.16,2.528c0.821,0.537,1.771,0.798,2.785,0.89 c0.213,0.024,0.421,0.093,0.657,0.093C297.023,400.873,325.328,366.404,350.25,318.652z"/> <path d="M247.696,93.629c-8.111-1.381-14.741,4.59-14.741,12.818v84.997c-4.795-1.759-9.959-2.771-15.371-2.771 c-24.697,0-44.715,20.019-44.715,44.721c0,24.693,20.018,44.711,44.715,44.711c18.098,0,33.662-10.748,40.691-26.205 c3.414-7.481,3.903-20.99,3.936-29.212c0.092-26.299,0.092-78.205,0.092-78.205c57.771,0,54.309,34.622,47.545,54.505 c-2.646,7.789-1.07,9.091,4.496,3.032C384.842,125.226,286.681,100.264,247.696,93.629z"/> </g> </g>
+                                        
+                                    </svg> -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="rgb(255, 212, 36)" version="1.1" id="Capa_1" height="100%" viewBox="0 -194 335 748" xml:space="preserve">
+                                        <g>
+                                            <path d="M97.173,322.156c35.754,0.874,67.271-11.577,84.481-30.805c6.111-6.845,10.074-14.932,10.836-16.527   c0.448-0.949,0.825-1.955,1.149-2.997l45.168-148.824c2.678-8.782,9.991-10.542,15.978-3.577   c4.629,5.392,9.606,11.507,14.659,18.304c20.823,27.968,22.502,64.76,11.397,94.439c-11.112,29.667-32.111,38.046-25.375,47.436   c6.757,9.418,33.226-13.974,50.453-41.793c17.212-27.824,19.136-74.354,3.603-112.445c-15.54-38.099-38.17-62.592-42.486-82.467   c-0.269-1.272-0.545-2.523-0.821-3.737c-0.453-2.06-0.269-5.574,0.429-7.837l1.242-4.105c3.391-11.146-2.89-22.922-14.058-26.307   c-11.141-3.384-22.915,2.914-26.297,14.052L172.77,195.409c-2.673,8.784-10.884,11.481-19.142,7.494   c-15.156-7.325-33.448-11.817-53.236-12.303c-53.387-1.311-97.377,27.086-98.267,63.426   C1.235,290.35,43.784,320.862,97.173,322.156z"/>
+                                        </g>
+                                    </svg>
+                                </svg>
+
+
+
+                                <div id="coinCount" class="displayFlex">
+                                    <div>0</div>
+                                </div>
+
+                                <hr>
+
+                                <div>Aalok</div>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png" alt="Avatar" id="avatarImg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainMusicSection">
+                        <div class="recentPlayedSection" id="recentSection">
+                            <div id="recentPlayedHeading">Recent Played</div>
+                            <div class="recentPlayedBoxForFlex displayFlex">
+                                <div class="recentPlayedMainBox">
+                                    <img src="https://static.wixstatic.com/media/483423_0d77597e08a84557aaac57d0e9daa99c~mv2.gif" alt="" id="beatGif">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="artistSection" id="artistSection">
+                            <div class="artistHeading">Artist</div>
+                            <div class="artistSubSection displayFlex">
+                                <div class="artistWrapper">
+                                    <!-- <div class="artistDataWrapper">
+                                        <img src="https://shorturl.at/TV249" alt="" class="artistImg">
+                                        <div class="artistName">Yo Yo Honey Singh</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="albumSectionWrapper" id="albumSection">
+                            <div class="albumHeadingDiv">Album</div>
+                            <div class="albumSubSectionDiv displayFlex">
+                                <div class="albumWrapperSection">
+                                    <!-- <div class="albumDataWrapper">
+                                        <img src="https://scontent.fnag1-4.fna.fbcdn.net/v/t39.30808-1/308837930_427756579461593_1434386063803892016_n.png?stp=dst-png_p120x120&_nc_cat=103&ccb=1-7&_nc_sid=5fac6f&_nc_ohc=GRuk-UB-ItsAX9YZP6c&_nc_ht=scontent.fnag1-4.fna&oh=00_AfCtgxFXsWgCKh7pyZOkzWPyHisSErw0SixD3rKg1Cx9tg&oe=652B44BC" alt="" class="albumImg">
+                                        <div class="albumName">Desi Kalakaar</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="randomSong displayFlex">
+                            <div class="randomSongDiv">
+                                <div class="randomSongHeading displayFlex">SONGS</div>
+                                <div class="randomSongWrapper"> 
+                                    <!-- <div class="randomSongBox displayFlex">
+                                        <div class="randomSongSubMiniBox">
+                                            <div class="randomSongImg displayFlex">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp9REClTzT7YmgnXrXgrfgDw3xLV673aPq4Q&usqp=CAU" alt="">
+                                            </div>
+                                            <div class="randomSongName">Desi Kalakaar</div>
+                                        </div>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="playListDataSection">
+                        <div class="imageData">
+                            <div class="dataImgWrapper">
+                                <img src="https://play-lh.googleusercontent.com/xVOHM_0sCJplpk9qJ_KRygXYiE3JAiieCv-p_70d9KdoqDmjqRHJAWUF24csoja-hL8=w240-h480-rw" alt="">
+                                <div class="nameData">
+                                    <div class="nameAboutWrapper">
+                                        <div class="artistNameDiv">Yo Yo Honey Singh</div>
+                                        <div class="artistAboutDiv">he is the great artist of india Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, aut!</div>
+                                    </div>
+                                    <div class="backFollowBtnWrapper">
+                                        <div class="followBtn displayFlex"><i class="fa-solid fa-user-plus"></i><div>Follow</div></div>
+                                        <div class="backBtn displayFlex"><i class="fa-solid fa-chevron-left"></i><div>Back</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlistData">
+                            <div class="playListSongSection">
+                                <div class="playlistHeadingWrapper">
+                                    <div>Playlist</div>
+                                </div>
+                                <!-- <img src="./Image/ezgif.com-crop.gif" style="height: 30%;margin: auto;opacity: 0;" class="playlistBeatGif"> -->
+                                <div class="playlistSongWrapper"> 
+                                    <div class="playlistSongData">
+                                        <div class="playlistSongImageDiv displayFlex">
+                                            <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/201906/bmw_660x450_062519044727.jpg?size=948:533" alt="" class="playlistSongImage">
+                                        </div>
+                                        <div class="playlistSongNameDiv">
+                                            <div class="playlistSongName">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="albumData">
+                            <div class="albumSection">
+                                <div class="albumHeading">
+                                    <div>Albums</div>
+                                </div>
+                                <div class="albumWrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="searchDataSection">
+                        <div class="recentSearchHeading">Recent Search <i class="fa-solid fa-angle-up"></i></div>
+                        
+                        <div class="div" style="width: 100%;height: max-content;">
+                            <div class="recentSearchesWrapper">
+                                <!-- <div class="recentSearchBox">
+                                    <div class="recentSearchText">Look Who Has Coming</div>
+                                    <div class="recentSearchXicon">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="recentSearchHeading">Search Results</div>
+                        <div class="searchDataWrapper"> 
+                            
+                            <div class="searchDataBox displayFlex">
+                                <div class="searchDataSubBox">
+                                    <div class="searchDataImg displayFlex">
+                                        <img src="./Image/coverImage.jpg" alt="">
+                                    </div>
+                                    <div class="searchDataName">Desi Kalakaar akjls jlflsdjfljefgjg erjgejrgne ejfgkejnwg</div>
+                                </div>
+                            </div> 
+                            
+                        </div>
+                    </div>
+
+                    <div class="myFruitySection">
+                        <div class="myFruityHeading">My Fruity</div>
+                        <div class="myFruityWrapper"> 
+                            <!-- <div class="myFruityBox displayFlex">
+                                <div class="myFruitySubBox">
+                                    <div class="myFruityImg displayFlex">
+                                        <img src="./Image/coverImage.jpg" alt="">
+                                    </div>
+                                    <div class="myFruityName">Desi Kalakaar akjls jlflsdjfljefgjg erjgejrgne ejfgkejnwg</div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div id="userDataSection">
+                        <div id="userDataSectionHeading">User Data</div>
+
+                        <table>
+                            <tr>
+                              <th>DP</th>
+                              <th>Name</th>
+                              <th>Email</th>
+                              <th>From</th>
+                              <th>last Sign Time</th>
+                              <th>Creation Time</th>
+                            </tr>
+                        </table>
+                    </div> 
+
+                    <!-- <div class="addMusicSection displayFlex">
+                        
+                    </div> -->
+
+                </div>
+                <div class="musicBox displayFlex">
+                    <div class="rangeWrapper displayFlex">
+                        <div class="footerBar displayFlex">
+                            <div class="songImg displayFlex">
+                                <img src="./Image/Untitled.png" alt="Chordify">
+                            </div>
+                            <div class="songName">
+                                <span id="songName">Chordify</span>
+                            </div>
+                        </div>
+                        <div class="btnWrapper displayFlex flexDirection">
+                            <div class="songDuration displayFlex">
+                                <input type="range" value="0" min="0" max="100" class="songRangeBar">
+                                <p4 id="songDurationNum">3:16</p4>
+                            </div>
+                            <div class="songPlayPauseBtn">
+                                <div class="backwardBtn">
+                                    <i class="fa-solid fa-backward fa-lg"></i>
+                                </div>
+                                <div class="playBtn displayFlex">
+                                    <i class="fa-solid fa-play fa-lg"></i>
+                                </div>
+                                <div class="forwardBtn">
+                                    <i class="fa-solid fa-forward fa-lg"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="likeBtn">
+                            <div class="iconWrapper">
+                                <i class="fa-regular fa-heart fa-sm"></i>
+                            </div>
+                            <div class="iconWrapper">
+                                <div class="rangeWrapperDiv">
+                                    <input type="range" min="0" max="100" value="100" class="volumeRange">
+                                </div>
+                                <i class="fa-solid fa-volume-high fa-sm"></i> -->
+                                <!-- <i class="fa-solid fa-volume-off fa-xl"></i> -->
+                            </div>
+                            <div class="iconWrapper">
+                                <i class="fa-solid fa-download fa-sm"></i>
+                            </div>
+                            <div class="iconWrapper">
+                                <i class="fa-solid fa-list fa-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="mainContainer">
+
+        <div class="formSectionWrapper displayFlex">
+            
+            <!-- Background Image Container -->
+            <div class="imgContainer">
+                <!-- <img class="coverImg" src="./Image/pexels-nardo-3574678 (1).jpg"> -->
+                <img class="coverImg" src="./Image/pexels-nardo-godot.png">
+            </div>
+    
+    
+            <!-- Container -->
+            <div class="container">
+    
+    <!-- ==================== ==> Flip Container One <== ===================  -->
+    
+                <div class="subContainer displayFlex flexDirection">
+                    
+                    <h1 class="headingText">Login</h1>
+    
+                    <!-- Login Wrapper -->
+                    <div class="loginContainer displayFlex flexDirection">
+                        
+                        <!-- Email Input Section -->
+                        <label class="width100Per" for="email">Email</label>
+                        <div class="input slideanimation1 displayFlex margin10 width100Per height10Per">
+                            <div class="inputContainer">
+                                <i class="fa-regular fa-envelope fa-ml"></i>
+                            </div>
+                            <input class="width100Per height100Per" type="email" id="email" name="email" autocomplete="off" placeholder="musicListener@gmail.com">
+                        </div>
+    
+                        <!-- Password Input Section -->
+                        <label class="width100Per" for="password">Password</label>
+                        
+                        <div class="input slideanimation2 displayFlex width100Per height10Per" style="margin-bottom: 2%;">
+                            <div class="inputContainer">
+                                <i class="fa-solid fa-lock fa-ml"></i>
+                            </div>
+                            <input class="width100Per height100Per" type="password" id="password" name="password" placeholder="*******" maxlength="12">
+                            <div class="inputEyeContainer" id="passwordEye">
+                                <i class="fa-regular fa-eye fa-ml"></i>
+                            </div>
+                        </div>
+
+                        <!-- Forget Password Button -->
+                        <input id="forgetPasswordBtn" type="button" value="Forget Password">
+                        
+                        <!-- Login Button -->
+                        <button id="buttonanimation1" class="margin10 width100Per height10Per radius10">Login</button>
+        
+                        <div class="displayFlex margin10 width100Per">
+                            <hr>
+                            <div id="orText">OR</div>
+                            <hr>
+                        </div>
+                        
+                        <!-- Google Button -->
+                        <button id="buttonanimation1" class="loginWithGoogle margin10 width100Per height10Per radius10"><i class="fa-brands fa-google fa-xl"></i>&nbsp;Sign in with Google</button>
+                        
+                        <!-- Sign Up Button -->
+                        <div class="displayFlex margin10 width100Per height10Per">
+                            <h5 class="link">Don't have an account?</h5><h5><a class="link" id="linkColor1">Sign up for free</a></h5>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+    <!-- ==================== ==> Flip Container Two <== ===================  -->
+    
+                <div class="subContainer2 displayFlex flexDirection">
+                    
+                    <h1 class="headingText">Sign - up</h1>
+    
+                    <!-- Login Wrapper -->
+                    <div class="loginContainer displayFlex flexDirection">
+                        
+                        <!-- Email Input Section -->
+                        <label class="width100Per" for="email">Email</label>
+                        
+                        <div class="input displayFlex margin10 width100Per height10Per">
+                            <div class="inputContainer">
+                                <i class="fa-regular fa-envelope fa-ml"></i>
+                            </div>
+                            <input class="width100Per height100Per" type="email" id="newEmail" name="email" autocomplete="off" placeholder="musicListener@gmail.com">
+                        </div>
+    
+                        <!-- Password Input Section -->
+
+                        <label class="width100Per" for="password">Create Password</label>
+                       
+                        <div class="input displayFlex margin10 width100Per height10Per">
+                            <div class="inputContainer">
+                                <i class="fa-solid fa-lock fa-ml"></i>
+                            </div>
+                            <input class="width100Per height100Per" type="password" id="createPassword" name="password" placeholder="*******" maxlength="12">
+                            <div class="inputEyeContainer" id="createPasswordEye">
+                                <i class="fa-regular fa-eye fa-ml"></i>
+                            </div>
+                        </div>
+    
+                        <!-- Conform Password Input Section  -->
+    
+                        <label class="width100Per" for="confirmPassword">Confirm Password</label>
+                       
+                        <div class="input displayFlex margin10 width100Per height10Per">
+                            <div class="inputContainer">
+                                <i class="fa-solid fa-lock fa-ml"></i>
+                            </div>
+                            <input class="width100Per height100Per" type="password" id="confirmPassword" name="confirmPassword" placeholder="*******" maxlength="12">
+                            <div class="inputEyeContainer" id="confirmPasswordEye">
+                                <i class="fa-regular fa-eye fa-ml"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Login Button -->
+                        <button id="loginButton" class="displayFlex margin10 width100Per height10Per radius10">Signup
+
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin-left: 2%; background: rgba(255, 255, 255, 0); shape-rendering: auto; aspect-ratio: 1/1;" height="80%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                <circle cx="28" cy="75" r="11" fill="#131E24">
+                                  <animate attributeName="fill-opacity" repeatCount="indefinite" dur="1s" values="0;1;1" keyTimes="0;0.2;1" begin="0s"/>
+                                </circle>
+                                
+                                <path d="M28 47A28 28 0 0 1 56 75" fill="none" stroke="#00dbff" stroke-width="10">
+                                  <animate attributeName="stroke-opacity" repeatCount="indefinite" dur="1s" values="0;1;1" keyTimes="0;0.2;1" begin="0.1s"/>
+                                </path>
+                                <path d="M28 25A50 50 0 0 1 78 75" fill="none" stroke="#ffffff" stroke-width="10">
+                                  <animate attributeName="stroke-opacity" repeatCount="indefinite" dur="1s" values="0;1;1" keyTimes="0;0.2;1" begin="0.2s"/>
+                                </path>
+                            </svg>
+
+                        </button>
+        
+                        <div class="displayFlex margin10 width100Per">
+                            <hr>
+                            <div id="orText">OR</div>
+                            <hr>
+                        </div>
+                        
+                        <!-- Google Button -->
+                        <button id="signWithGoogle" class="margin10 width100Per height10Per radius10"><i class="fa-brands fa-google fa-xl"></i>&nbsp;Sign in with Google</button>
+                        
+                        <!-- Sign Up Button -->
+                        <div class="displayFlex margin10 width100Per height10Per">
+                            <h5 class="link">Already have an account?</h5><h5><a class="link" id="linkColor2">&nbsp;Login</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All javaScript file links here -->
+    
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textile-js/2.1.1/textile.min.js" integrity="sha512-tXqnJLtLXWw7dsznazHu0eOB2d/oQQ1b6BMvIvwI5gUG5f3e8MxaNTkCBdeQmpwlemlXwNRas39dDQi0BGd2Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    
+    <script type="module" src="fireBase/firebaseInit.js"></script>
+    <script type="module" src="fireBase/firebaseObserver.js"></script>
+    <script type="module" src="fireBase/googleMethod.js"></script>
+    <script type="module" src="fireBase/loginMethod.js"></script>
+    <script type="module" src="fireBase/logoutMethod.js"></script>
+    <script type="module" src="fireBase/SignInMethod.js"></script>
+
+    <script type="module" src="./js/function.js"></script>
+
+    <script type="module" src="./js/loadSongs.js"></script>
+    <script type="module" src="./js/artistAbout.js"></script>
+    <script type="module" src="./js/artistPage.js"></script>
+    <script type="module" src="./js/albumPage.js"></script>
+    <script type="module" src="./js/profilePic.js"></script>
+    <script type="module" src="./js/setting.js"></script>
+    <script type="module" src="./js/SideNavbar.js"></script>
+    <script type="module" src="./js/songSearching.js"></script>
+</body>
+</html>
+
+
+
+

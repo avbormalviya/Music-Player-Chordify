@@ -1,0 +1,1844 @@
+:root {
+    --toggleHeight: 16em;
+    --toggleWidth: 30em;
+    --toggleBtnRadius: 10em;
+    --bgColor--night: #423966;
+    --mooncolor: #D9FBFF;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Noto Serif", serif;
+}
+
+:focus {
+    outline: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.mainContainer {
+    background-color: rgb(1, 3, 16);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Image/coverBackground.png"), url("../Image/coverBackground.png");
+}
+
+.formSectionWrapper {
+    width: 70%;
+    aspect-ratio: 16 / 9;
+}
+
+.imgContainer {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(18, 25, 33);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.coverImg {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    object-position: 60% -15%;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+    filter: blur(0.1px);
+    opacity: 1;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+}
+
+.subContainer2 {
+    transform: rotateY(90deg);
+}
+
+.subContainer, .subContainer2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(18, 25, 33);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.subContainer2 > h1, .subContainer > h1 {
+    font-size: 3vw;
+    color: rgb(88, 113, 126);
+}
+
+.errorAlert {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 3.5;
+    background-color: rgb(18, 25, 33);
+    color: rgb(151, 189, 196);
+    margin: 1%;
+    overflow: hidden;
+    border-radius: 0.5vw;
+    top: 0px;
+    right: -16vw;
+    font-size: 1vw;
+    align-items: center;
+    box-shadow: rgb(51, 129, 142) 0px 0px 10px 0px;
+    z-index: 1;
+}
+
+.alertSection {
+    height: 86%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underlineDiv {
+    height: 15%;
+    width: 100%;
+}
+
+.alertText {
+    width: 85%;
+    height: 100%;
+    font-size: 90%;
+    text-wrap: nowrap;
+}
+
+.xmarkIcon {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.underline {
+    content: "";
+    width: 100%;
+    transform: scaleX(1);
+    height: 0.5vw;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(94, 255, 0);
+    transform-origin: left bottom;
+}
+
+.loginContainer {
+    width: 70%;
+    height: 80%;
+}
+
+.loginContainer > label {
+    font-size: 1vw;
+    color: rgb(151, 189, 196);
+}
+
+.subContainer > .loginContainer > button, .subContainer2 > .loginContainer > button {
+    background-color: rgb(51, 129, 142);
+    color: rgb(19, 30, 36);
+    font-size: 0.9vw;
+    border: none;
+    font-weight: bold;
+}
+
+#loginButton > svg {
+    display: none;
+    opacity: 0;
+}
+
+#email, #newEmail {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.input > input {
+    border: none;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    margin-top: 5px;
+    font-size: 0.9vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputContainer {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 68, 69);
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 5px;
+    color: rgb(18, 25, 33);
+}
+
+.inputEyeContainer {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 68, 69);
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 5px;
+    color: rgb(18, 25, 33);
+}
+
+#forgetPasswordBtn {
+    position: relative;
+    background: none;
+    border: none;
+    margin-bottom: 3%;
+    right: -35%;
+    color: rgb(51, 129, 142);
+    cursor: pointer;
+}
+
+#forgetPasswordBtn:hover {
+    color: rgb(36, 84, 93);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid rgb(56, 68, 69);
+}
+
+#orText {
+    font-size: 15px;
+    margin: 0px 10px;
+    color: rgb(56, 68, 69);
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#linkColor1, #linkColor2 {
+    color: rgb(51, 129, 142);
+}
+
+.mainMusicContainer {
+    background-color: rgb(1, 3, 16);
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../Image/coverBackground.png");
+    background-size: 100vh;
+}
+
+.musicContainer {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 2vw;
+    background-color: rgba(18, 25, 33, 0.914);
+    position: relative;
+}
+
+.subMusicContainer {
+    height: 100%;
+    width: 90.9%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 18% 92%;
+    grid-template-rows: 90% 10%;
+}
+
+.loadingSection {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    font-size: large;
+    color: rgb(51, 129, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBar {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.mainSection {
+    border-radius: 0px 20px 20px 0px;
+}
+
+.logoSection {
+    border-radius: 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImg {
+    width: 90%;
+    object-fit: cover;
+}
+
+.sideNavbar {
+    height: 40%;
+}
+
+.sideNavbarSetting {
+    height: 35%;
+}
+
+.sideNavbar > nav {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sideNavbar > nav > ul {
+    height: 10%;
+    list-style: none;
+    font-weight: bolder;
+    margin-bottom: 6%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(63, 81, 82);
+}
+
+.sideNavbar > nav > ul > .sideNavbarIcon > i {
+    margin: 0px 1vw 0px 3vw;
+}
+
+.sideNavbarSetting > nav {
+    width: 100%;
+    height: 100%;
+    font-size: 1.1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sideNavbarSetting > nav > ul {
+    height: 10%;
+    list-style: none;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(63, 81, 82);
+}
+
+.sideNavbarSetting > nav > ul > .sideNavbarIcon > i {
+    margin: 0px 1vw 0px 3vw;
+}
+
+.sideNavbarSetting > nav > ul:hover {
+    color: rgb(51, 129, 142);
+}
+
+.musicBox {
+    border-radius: 0px 0px 0px 20px;
+    grid-column: 1 / 3;
+}
+
+.songImg {
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.songImg img {
+    width: 61.44%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+.rangeWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.footerBar {
+    height: 100%;
+    width: 30%;
+}
+
+.btnWrapper {
+    height: 100%;
+    width: 40%;
+}
+
+.songName {
+    font-size: 0.9vw;
+    width: 70%;
+    height: 100%;
+    color: rgb(51, 129, 142);
+    display: flex;
+    align-items: center;
+}
+
+.songDuration {
+    width: 100%;
+    height: 30%;
+    font-weight: bold;
+    color: rgb(88, 113, 126);
+}
+
+.songRangeBar {
+    width: 95%;
+    height: 2%;
+}
+
+.songRangeBar::-webkit-slider-thumb {
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.songRangeBar::-webkit-slider-thumb:hover {
+    opacity: 1;
+}
+
+.songRangeBar::-webkit-slider-thumb:active, .songRangeBar::-webkit-slider-thumb:focus {
+    background: rgb(88, 113, 126);
+    cursor: -webkit-grabbing;
+}
+
+#songDurationNum {
+    margin-left: 10px;
+    font-size: 0.65rem;
+}
+
+.songPlayPauseBtn {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-play, .fa-pause, .fa-backward, .fa-forward {
+    cursor: pointer;
+    color: rgb(88, 113, 126);
+}
+
+.playBtn {
+    margin: 0px 15%;
+    height: 20px;
+    width: 20px;
+}
+
+.likeBtn {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(88, 113, 126);
+}
+
+.likeBtn i {
+    cursor: pointer;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+.iconWrapper > i {
+    position: absolute;
+}
+
+.likeBtn > .iconWrapper:nth-child(2) {
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.likeBtn > .iconWrapper:nth-child(2):hover {
+    overflow: visible;
+}
+
+.rangeWrapperDiv {
+    height: 100%;
+    min-height: 350%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 125%;
+    border-radius: 5vw;
+}
+
+.iconWrapper .volumeRange {
+    width: 100px;
+    height: 1px;
+    transform: rotateZ(-90deg);
+    position: relative;
+    bottom: 9%;
+}
+
+.playerSection {
+    width: 100%;
+    height: 86%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.navSection {
+    width: 100%;
+    height: 10%;
+    border-radius: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchSection {
+    width: 40%;
+    height: 50%;
+}
+
+.searchSection > .searchIcon {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 68, 69);
+    border-radius: 10px 0px 0px 10px;
+    color: rgb(18, 25, 33);
+}
+
+.searchSection > input {
+    border: none;
+    font-size: 1.1vw;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.searchSection > input:focus {
+    outline: none;
+}
+
+.avatarSection {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1.3%;
+}
+
+#avatarMainSection {
+    position: absolute;
+    background-color: rgb(18, 28, 39);
+    right: -24vw;
+    width: 30%;
+    height: 40.5vw;
+    border-radius: 2vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.uploadedAvatar {
+    height: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin-top: 5%;
+    position: relative;
+}
+
+#avatarImage {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#bgAvatarImage {
+    position: absolute;
+    width: 120%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    top: -10%;
+    left: -10%;
+    z-index: 0;
+    opacity: 1;
+    filter: blur(24px);
+}
+
+#avatarXmark {
+    color: rgb(88, 113, 126);
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 8%;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+#inputUrlWrapper {
+    width: 90%;
+    height: 5%;
+    background-color: rgb(56, 68, 69);
+    border-radius: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#avatarImageInput {
+    font-size: 0.9vw;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    width: 15%;
+    height: 100%;
+    border-radius: 0.6vw 0px 0px 0.6vw;
+}
+
+#uploadImg {
+    border: none;
+    font-size: 0.9vw;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    width: 70%;
+    height: 100%;
+}
+
+#saveBtn {
+    border: none;
+    font-size: 0.9vw;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    width: 15%;
+    height: 100%;
+    border-radius: 0px 0.6vw 0.6vw 0px;
+    cursor: pointer;
+}
+
+.defaultAvatarSection {
+    width: 90%;
+    height: 50%;
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.086);
+    border-radius: 10px;
+    margin: 5%;
+}
+
+#avatarWrapper {
+    width: 100%;
+    height: 92%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.avatarHeading {
+    display: flex;
+    align-items: center;
+    margin: 2% 0px 0px 4%;
+    font-size: 1vw;
+    color: rgb(51, 129, 142);
+}
+
+.prebuildAvatar {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+
+.prebuildAvatar img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.prebuildAvatar img:hover {
+    width: 90%;
+}
+
+.avatar {
+    height: 60%;
+    width: max-content;
+    border: 1px solid rgb(56, 68, 69);
+    border-radius: 3vw;
+    background-position: center center;
+    background-size: cover;
+    padding: 0.5%;
+    color: rgb(158, 227, 251);
+    font-size: 0.9vw;
+}
+
+.avatar > :nth-child(2n) {
+    margin-left: 0.8vw;
+    text-wrap: nowrap;
+}
+
+#coinCount > :not(:first-child) {
+    position: absolute;
+    transform: translate(-14%, -2%);
+    opacity: 0;
+}
+
+.avatar > :nth-child(3) {
+    height: 100%;
+    width: 0.1vw;
+    margin-left: 0.8vw;
+    border-width: 0.1vw;
+    border-style: solid;
+    border-color: initial;
+    border-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(56, 68, 69) 50%, rgba(255, 255, 255, 0) 100%) 1 / 1 / 0 stretch;
+}
+
+#avatarImg, #avatarBorder {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 0.8vw;
+}
+
+#settingSection {
+    position: absolute;
+    background-color: rgb(13, 22, 33);
+    right: -24vw;
+    width: 30%;
+    height: 40.5vw;
+    border-radius: 2vw;
+    z-index: 1;
+    overflow: scroll;
+}
+
+.settingInnerDiv {
+    width: 100%;
+    color: rgb(51, 129, 142);
+    background: rgb(18, 28, 39);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.settingInnerDiv > :not(h3) {
+    color: rgb(37, 98, 108);
+}
+
+.settingInnerDiv > :first-child:not(h3) {
+    margin-left: 10%;
+    min-height: 4vw;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.settingInnerDiv > :first-child:not(h3) > div {
+    cursor: pointer;
+}
+
+#settingHeading {
+    position: sticky;
+    top: 0px;
+    height: 12%;
+    min-height: 10%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#settingHeading h3 {
+    font-size: 1.3vw;
+    margin-left: 7%;
+}
+
+#settingHeading i {
+    margin-right: 7%;
+    cursor: pointer;
+}
+
+#settingSection > hr {
+    height: 0.1vw;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(25, 43, 52) 5%, rgb(25, 43, 52) 95%, rgba(255, 255, 255, 0) 100%) 1 / 1 / 0 stretch;
+}
+
+#settingSection > :nth-child(3) {
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(151, 189, 196) 5%, rgb(151, 189, 196) 95%, rgba(255, 255, 255, 0) 100%) 1 / 1 / 0 stretch;
+    position: sticky;
+    top: 12%;
+}
+
+#myAccountSetting, #avatarSetting, #resetPasswordSetting, #themeSetting, #deleteAccountSetting {
+    height: 10%;
+}
+
+.SettingInnerFoldDiv {
+    width: 100%;
+    height: max-content;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    background-color: rgb(18, 28, 39);
+}
+
+#myAccountSettingInnerFoldDiv table tr td {
+    font-size: 0.9vw;
+}
+
+#myAccountSettingInnerFoldDiv table tr > :last-child {
+    color: rgb(56, 68, 69);
+}
+
+#myAccountSettingInnerFoldDiv table tr > :nth-child(2n) {
+    color: rgb(88, 113, 126);
+}
+
+#myAccountSettingInnerFoldDiv table tr > :first-child {
+    color: rgb(88, 113, 126);
+}
+
+.resetPasswordInputWrapper {
+    width: 75%;
+    height: 1.6vw;
+    font-size: 1vw;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    border-radius: 1vw;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetPasswordInputWrapper > input {
+    border: none;
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    font-size: 0.9vw;
+}
+
+.resetPasswordInputWrapper > i {
+    margin: 0px 4%;
+}
+
+#resetPasswordSettingInnerFoldDiv {
+    align-items: start;
+    font-size: 0.9vw;
+}
+
+#resetPasswordSettingInnerFoldDiv label, #resetPasswordSettingInnerFoldDiv div {
+    margin-left: 10%;
+}
+
+#resetPasswordChangeBtn {
+    width: 75%;
+    height: 2vw;
+    background-color: rgba(76, 76, 76, 0.31);
+    margin-top: 2%;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+#themeSetting {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tdnn {
+    margin-right: 8%;
+}
+
+.light {
+    background: var(--lightbg);
+    color: var(--lightt);
+}
+
+.tdnn {
+    font-size: 0.1vw;
+    position: relative;
+    height: var(--toggleHeight);
+    width: var(--toggleWidth);
+    border-radius: var(--toggleHeight);
+    transition: all 500ms ease-in-out 0s;
+    background: var(--bgColor--night);
+}
+
+.day {
+    background: rgb(255, 191, 113);
+}
+
+.moon {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 400ms ease-in-out 0s;
+    top: 3em;
+    left: 3em;
+    transform: rotate(-75deg);
+    width: var(--toggleBtnRadius);
+    height: var(--toggleBtnRadius);
+    background: var(--bgColor--night);
+    box-shadow: 3em 2.5em 0 0em var(--mooncolor) inset, rgba(255, 255, 255, 0.1) 0em -7em 0 -4.5em, rgba(255, 255, 255, 0.1) 3em 7em 0 -4.5em, rgba(255, 255, 255, 0.1) 2em 13em 0 -4em, rgba(255, 255, 255, 0.1) 6em 2em 0 -4.1em, rgba(255, 255, 255, 0.1) 8em 8em 0 -4.5em, rgba(255, 255, 255, 0.1) 6em 13em 0 -4.5em, rgba(255, 255, 255, 0.1) -4em 7em 0 -4.5em, rgba(255, 255, 255, 0.1) -1em 10em 0 -4.5em;
+}
+
+.sun {
+    top: 4.5em;
+    left: 18em;
+    cursor: pointer;
+    transform: rotate(0deg);
+    width: 7em;
+    height: 7em;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(255, 255, 255) 3em 3em 0px 5em inset, rgb(255, 255, 255) 0px -5em 0px -2.7em, rgb(255, 255, 255) 3.5em -3.5em 0px -3em, rgb(255, 255, 255) 5em 0px 0px -2.7em, rgb(255, 255, 255) 3.5em 3.5em 0px -3em, rgb(255, 255, 255) 0px 5em 0px -2.7em, rgb(255, 255, 255) -3.5em 3.5em 0px -3em, rgb(255, 255, 255) -5em 0px 0px -2.7em, rgb(255, 255, 255) -3.5em -3.5em 0px -3em;
+}
+
+#deleteAccountSettingInnerFoldDiv {
+    font-size: 0.9vw;
+}
+
+#deleteAccountSettingInnerFoldDiv > :first-child {
+    color: rgb(56, 68, 69);
+    margin-left: 10%;
+}
+
+#deleteAccountSettingInnerFoldDiv > :nth-child(2n) {
+    width: 60%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#deleteAccountSettingInnerFoldDiv > :nth-child(2n) > div {
+    background-color: rgb(56, 68, 69);
+    color: rgb(88, 113, 126);
+    padding: 3%;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.mainMusicSection {
+    border-top: 2px solid rgb(19, 30, 36);
+    border-left: 2px solid rgb(19, 30, 36);
+    background-color: rgb(18, 25, 33);
+    width: 100%;
+    height: 90%;
+    border-radius: 2vw 0px 2vw 2vw;
+    overflow: scroll;
+}
+
+.recentPlayedSection {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#recentPlayedHeading {
+    padding: 0.5% 0px 1% 2%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    color: rgb(151, 189, 196);
+}
+
+.recentPlayedBoxForFlex {
+    width: 100%;
+    height: calc(90% - 20px);
+}
+
+.recentPlayedMainBox {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.recentPlayedSubBox {
+    height: 100%;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1.5% 0px 0px;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.recentplayedImgCoverDiv {
+    background-color: rgb(0, 0, 0);
+}
+
+.recentPlayedImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1vw;
+}
+
+.recentPlayedSubBox ::before {
+    content: "";
+    position: absolute;
+    top: 6.2vw;
+    left: 5%;
+    border-radius: 1vw;
+    background-color: rgba(255, 0, 0, 0.57);
+    width: 90%;
+    height: 2.5%;
+}
+
+.recentPlayedName {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    overflow: hidden;
+    color: rgb(88, 113, 126);
+    text-align: center;
+    line-height: 160%;
+    background: rgb(255, 0, 0);
+}
+
+#beatGif {
+    width: 130%;
+    position: absolute;
+    left: 22%;
+    bottom: 5%;
+    opacity: 0;
+    display: none;
+}
+
+.artistSection {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.artistHeading {
+    padding: 0px 0px 1% 1%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    color: rgb(151, 189, 196);
+}
+
+.artistSubSection {
+    width: 100%;
+    height: calc(90% - 20px);
+}
+
+.artistWrapper {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.artistDataWrapper {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1.5% 0px 0px;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.artistImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+}
+
+.aristImg::before {
+    content: "";
+    position: absolute;
+    width: 140%;
+    height: 140%;
+    border: 10px solid rebeccapurple;
+    border-radius: 50%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.artistImg:hover::before {
+    opacity: 1;
+    width: 105%;
+    height: 105%;
+}
+
+.artistName {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    overflow: hidden;
+    color: rgb(88, 113, 126);
+    line-height: 1.2;
+    text-align: center;
+    background: -webkit-linear-gradient(top, rgb(238, 238, 238), rgb(51, 51, 51)) text;
+    -webkit-text-fill-color: transparent;
+}
+
+.randomSong {
+    width: 100%;
+    height: auto;
+}
+
+.randomSongDiv {
+    height: 95%;
+    width: 97%;
+    border-radius: 1vw;
+    margin-top: 1vw;
+    background-color: rgba(41, 41, 41, 0.447);
+}
+
+.randomSongHeading {
+    font-size: 1.3vw;
+    color: rgb(51, 129, 142);
+    height: 3vw;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    border-radius: 1vw 1vw 0px 0px;
+    background-color: rgba(62, 62, 62, 0.667);
+    margin-bottom: 1vw;
+}
+
+.randomSongWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.randomSongBox {
+    width: calc(12.5%);
+    height: 60%;
+    min-width: calc(12.5%);
+    min-height: 60%;
+    margin-bottom: 1.2vw;
+}
+
+.randomSongSubMiniBox {
+    height: 90%;
+    width: 90%;
+    border-radius: 1vw;
+    background-color: rgba(64, 64, 64, 0.306);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.randomSongImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.randomSongImg img {
+    width: 90%;
+    border-radius: 10%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.randomSongName {
+    font-size: 0.9vw;
+    text-align: center;
+    color: rgba(71, 213, 255, 0.4);
+    margin-bottom: 0.8vw;
+}
+
+.playListDataSection {
+    border-top: 2px solid rgb(19, 30, 36);
+    border-left: 2px solid rgb(19, 30, 36);
+    background-color: rgb(18, 25, 33);
+    width: 100%;
+    height: 90%;
+    border-radius: 20px 0px 20px 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50% 50%;
+    padding: 2%;
+}
+
+.imageData {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.dataImgWrapper {
+    width: 96%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    /* margin-left: 4.3%; */
+    display: flex;
+}
+
+.imageData img {
+    /* width: 18%; */
+    aspect-ratio: 1/1;
+    height: 90%;
+    background-color: rgb(24, 30, 38);
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px 0px 0px 10px;
+    border-top: 10px solid rgba(255, 255, 255, 0.024);
+    border-bottom: 10px solid rgba(255, 255, 255, 0.024);
+    border-left: 10px solid rgba(255, 255, 255, 0.024);
+    border-image: initial;
+    border-right: none;
+}
+
+.nameData {
+    /* width: 95%; */
+    height: 90%;
+    border-top: 10px solid rgba(255, 255, 255, 0.024);
+    border-right: 10px solid rgba(255, 255, 255, 0.024);
+    border-bottom: 10px solid rgba(255, 255, 255, 0.024);
+    border-image: initial;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(24, 30, 38);
+}
+
+.nameAboutWrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.backFollowBtnWrapper {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followBtn, .backBtn {
+    height: 70%;
+    width: 25%;
+    background-color: rgb(51, 129, 142);
+    border-radius: 10px;
+    margin: 0px 5px 5px 0px;
+    font-size: 0.8vw;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.followBtn i, .backBtn i {
+    margin-right: 5px;
+    margin-top: 1.4px;
+}
+
+.artistNameDiv {
+    color: rgb(51, 129, 142);
+    font-size: 1.5vw;
+    margin: 2% 0px 2% 5%;
+}
+
+.artistAboutDiv {
+    color: rgba(151, 189, 196, 0.34);
+    font-size: 0.9vw;
+    margin: 2% 0px 2% 5%;
+}
+
+.followBtn {
+    float: right;
+}
+
+.playlistData {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.playListSongSection {
+    width: 99%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.024);
+    border-radius: 10px;
+    /* margin-top: 6.4%; */
+}
+
+.playlistHeadingWrapper {
+    width: 100%;
+    height: 10.5%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.067);
+    display: flex;
+    align-items: center;
+}
+
+.playlistHeadingWrapper div {
+    margin-left: 5%;
+    color: rgb(88, 113, 126);
+    font-size: 1.4vw;
+}
+
+.playlistSongWrapper {
+    width: 100%;
+    height: 89.5%;
+    overflow: scroll;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.playlistSongData {
+    width: 90%;
+    height: 20%;
+    min-height: 20%;
+    background-color: rgba(255, 255, 255, 0.067);
+    margin-bottom: 4%;
+    border-radius: 10px;
+    display: flex;
+    scroll-snap-align: center;
+}
+
+.playlistSongData:first-child {
+    margin-top: 4%;
+}
+
+.playlistSongImageDiv {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.playlistSongImage {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+.playlistSongNameDiv {
+    height: 30%;
+    width: 55%;
+    margin-top: 3%;
+}
+
+.playlistSongName {
+    color: rgb(88, 113, 126);
+    font-size: 1vw;
+}
+
+.albumData {
+    width: 100%;
+    height: 100%;
+    /* margin-left: 4.4%; */
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.albumSection {
+    width: 96%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.024);
+    border-radius: 10px;
+}
+
+.albumHeading {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.067);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.albumHeading div {
+    margin-left: 3%;
+    color: rgb(88, 113, 126);
+    font-size: 1.4vw;
+}
+
+.albumWrapper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.albumNameData {
+    width: 45.5%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.067);
+    border-radius: 10px;
+    scroll-snap-align: center;
+    display: flex;
+}
+
+.albumNameData:nth-child(2n+1) {
+    margin-left: 3%;
+    margin-right: 1.5%;
+    margin-bottom: 2.5%;
+}
+
+.albumNameData:nth-child(2n) {
+    margin-right: 3%;
+    margin-left: 1.5%;
+    margin-bottom: 2.5%;
+}
+
+.albumNameData:nth-child(-n+2) {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.albumImageWithName {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.albumImageWithName img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+.albumNameDiv {
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.albumNameDiv div:nth-child(1):not(.songNumbers) {
+    color: rgb(88, 113, 126);
+    margin: 8% 0px 2%;
+    font-size: 1vw;
+}
+
+.albumNameDiv div:nth-child(2) {
+    font-size: 0.9vw;
+    color: rgb(51, 129, 142);
+}
+
+.songNumbers {
+    display: inline;
+}
+
+.albumBeatGif {
+    width: 13%;
+    position: absolute;
+    mix-blend-mode: overlay;
+    right: 10%;
+    bottom: 10%;
+}
+
+.albumSectionWrapper {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.albumHeadingDiv {
+    padding: 0px 0px 1% 1%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    color: rgb(151, 189, 196);
+}
+
+.albumSubSectionDiv {
+    width: 100%;
+    height: calc(90% - 20px);
+}
+
+.albumWrapperSection {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.albumDataWrapper {
+    height: 100%;
+    width: 10%;
+    min-width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1.5% 0px 0px;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+.albumImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1vw;
+}
+
+.albumName {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    overflow: hidden;
+    color: rgb(88, 113, 126);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.searchDataSection {
+    border-top: 2px solid rgb(19, 30, 36);
+    border-left: 2px solid rgb(19, 30, 36);
+    background-color: rgb(18, 25, 33);
+    width: 100%;
+    height: 90%;
+    border-radius: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recentSearchHeading {
+    padding: 0.5% 0px 1% 2%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    height: 7%;
+    color: rgb(151, 189, 196);
+    display: flex;
+    justify-content: space-between;
+}
+
+.recentSearchHeading i {
+    margin: 0.5% 2% 0px 0px;
+    cursor: pointer;
+}
+
+.recentSearchesWrapper {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-bottom: 0.15vw solid;
+    border-image: linear-gradient(90deg, rgba(177, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgb(49, 49, 49) 15%, rgb(49, 49, 49) 85%, rgba(255, 255, 255, 0) 100%) 1 / 1 / 0 stretch;
+}
+
+.recentSearchBox {
+    height: auto;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 5vw;
+    margin: 0.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 1%;
+}
+
+.recentSearchesWrapper:not(.recentSearchBox) {
+    display: flex;
+    justify-content: center;
+}
+
+.recentSearchesWrapper hr {
+    width: 95%;
+    margin: auto;
+}
+
+.recentSearchText {
+    font-size: 0.9vw;
+    color: rgb(125, 125, 125);
+    display: flex;
+    align-items: center;
+}
+
+.recentSearchXicon {
+    color: rgb(94, 255, 0);
+    cursor: pointer;
+}
+
+.searchDataHeading {
+    padding: 0.5% 0px 1% 2%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    height: 7%;
+    color: rgb(151, 189, 196);
+}
+
+.searchDataWrapper {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.searchDataBox {
+    height: max-content;
+    width: calc(14.2857%);
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchDataSubBox {
+    height: 90%;
+    width: 90%;
+    background-color: rgb(63, 63, 63);
+    display: flex;
+    border-radius: 1vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchDataImg {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 0.5vw;
+}
+
+.searchDataImg > img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.5vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.searchDataName {
+    font-size: 0.9vw;
+    margin-bottom: 8%;
+    color: rgb(88, 113, 126);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.noResultFound {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFruitySection {
+    border-top: 2px solid rgb(19, 30, 36);
+    border-left: 2px solid rgb(19, 30, 36);
+    background-color: rgb(18, 25, 33);
+    width: 100%;
+    height: 90%;
+    border-radius: 2vw 0px 2vw 2vw;
+    overflow: scroll;
+}
+
+.myFruityHeading {
+    padding: 0.5% 0px 1% 2%;
+    font-weight: bolder;
+    font-size: 1.3vw;
+    height: 10%;
+    color: rgb(151, 189, 196);
+}
+
+.myFruityWrapper {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.myFruityBox {
+    height: 20%;
+    width: calc(25%);
+    margin-bottom: 1.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFruitySubBox {
+    height: 95%;
+    width: 95%;
+    background-color: rgb(63, 63, 63);
+    border-radius: 4vw;
+}
+
+.myFruityImg {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+}
+
+.myFruityImg > img {
+    width: 85%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.myFruityName {
+    font-size: 0.9vw;
+    width: 55%;
+    color: rgb(88, 113, 126);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#userDataSection {
+    border-top: 2px solid rgb(19, 30, 36);
+    border-left: 2px solid rgb(19, 30, 36);
+    background-color: rgb(18, 25, 33);
+    width: 100%;
+    height: 90%;
+    border-radius: 20px 0px 20px 20px;
+    overflow: scroll;
+    padding: 2%;
+}
+
+#userDataSectionHeading {
+    font-weight: bolder;
+    font-size: 1.3vw;
+    height: 10%;
+    color: rgb(151, 189, 196);
+}
+
+#userDataSection > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#userDataSection > table tr:first-child {
+    height: 2.5vw;
+    position: sticky;
+    top: 0px;
+}
+
+#userDataSection > table tr:not(:first-child) {
+    height: 3vw;
+}
+
+#userDataSection > table tr:not(:first-child) > :first-child {
+    width: 3vw;
+}
+
+#userDataSection > table tr:not(:first-child) > :first-child > img {
+    width: 80%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center center;
+    margin-top: 10%;
+}
+
+#userDataSection > table tr:nth-child(2n) {
+    background-color: rgb(0, 0, 0);
+}
+
+#userDataSection > table tr > th {
+    color: rgb(158, 227, 251);
+}
+
+#userDataSection > table tr > td {
+    color: rgb(88, 113, 126);
+    text-align: center;
+    font-size: 0.9vw;
+}

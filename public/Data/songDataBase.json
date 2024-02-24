@@ -1,0 +1,616 @@
+
+[
+    {
+        "artist": [
+            {
+                "artistName": "Yo Yo Honey Singh",
+                "artistImage": "./Data/images/honeySingh.jpg",
+                "album": [
+                    {
+                        "albumName": "Desi Kalakaar",
+                        "albumImage": "https://i.scdn.co/image/ab67616d0000b27365ce8c712e4fb894bc88461b",
+                        "songs": [
+                            {
+                                "songName": "Desi Kalakaar",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F01%20Desi%20Kalakaar%20-%20Yo%20Yo%20Honey%20Singh%20(PagalWorld.com).mp3?alt=media&token=93ce127a-0212-4a3f-b734-13cfeaf1473b&_gl=1*1fyak75*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUxMDAuNjAuMC4w"
+                            },
+                            {
+                                "songName": "Love Dose",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F02%20Love%20Dose%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=3fdd3f4d-1e8d-4b3e-a3d1-0faf6e5cb0a5&_gl=1*1k87ne8*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUyNDkuNjAuMC4w"
+                            },
+                            {
+                                "songName": "I'M Your DJ Tonight",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F03%20I%20M%20Your%20Dj%20Tonight%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=31104484-d5a0-4de9-91a7-4ff48a81424a&_gl=1*fke5kw*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUyODQuMjUuMC4w"
+                            },
+                            {
+                                "songName": "Chal Mere Ghar",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F04%20Chal%20Mere%20Ghar%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=0cefca0c-2cae-4117-a746-3e6fb2ccac31&_gl=1*leikyl*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUzMDEuOC4wLjA."
+                            },
+                            {
+                                "songName": "Daftar Ki Girl",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F05%20Daftar%20Ki%20Girl%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=89696213-d51b-464d-83d3-35cd7d0a6380&_gl=1*1sh1fdo*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUzMjAuNjAuMC4w"
+                            },
+                            {
+                                "songName": "One Thousand Miles",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F06%20One%20Thousand%20Miles%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=a71eded8-4129-47a7-bdb8-e18a9e8dc9e5&_gl=1*1rm1b40*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUzMzcuNDMuMC4w"
+                            },
+                            {
+                                "songName": "Stardom",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FYo%20Yo%20Honey%20Singh%2FDesi%20Kalakaar%2F07%20Stardom%20(Desi%20Kalakaar)%20Yo%20Yo%20Honey%20Singh.mp3?alt=media&token=cacd0855-05d1-4d55-a876-f94a9b83bada&_gl=1*1b0kfd6*_ga*MTkwOTM3MDk2Mi4xNjk3MzU0MTg0*_ga_CW55HF8NVT*MTY5NzUzMTE5NS4xNC4xLjE2OTc1MzUzNTIuMjguMC4w "
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Charlie Puth",
+                "artistImage": "./Data/images/charliePuth.jpg",
+                "album": [
+                    {
+                        "albumName": "Charlie",
+                        "albumImage": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Charlie_Puth_-_Charlie.png/220px-Charlie_Puth_-_Charlie.png",
+                        "songs": [
+                            {
+                                "songName": "That's Hilarious",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F01.%20That's%20Hilarious.mp3?alt=media&token=c5ed0ec2-bdf3-4b1e-a7ee-d0f82e84c22d"
+                            },
+                            {
+                                "songName": "Charlie Be Quiet!",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F02.%20Charlie%20Be%20Quiet!.mp3?alt=media&token=20bbd58d-21bd-4eb4-bb3d-6f65bbb5bce8"
+                            },
+                            {
+                                "songName": "Light Switch",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F03.%20Light%20Switch.mp3?alt=media&token=c5374e25-323f-491d-abc8-2f847ba191f7"
+                            },
+                            {
+                                "songName": "There's A First Time For Everything",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F04.%20There%E2%80%99s%20A%20First%20Time%20For%20Everything.mp3?alt=media&token=7a4c5366-1f2d-4aa5-b8e6-e038f726851c"
+                            },
+                            {
+                                "songName": "Smells Like Me",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F05.%20Smells%20Like%20Me.mp3?alt=media&token=644449b4-add6-4c6f-b272-3bee05eb545b"
+                            },
+                            {
+                                "songName": "Left and Right",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F06.%20Left%20and%20Right.mp3?alt=media&token=d5658950-b7e1-40bf-9c85-f4ca69fb3912"
+                            },
+                            {
+                                "songName": "Loser",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F07.%20Loser.mp3?alt=media&token=35a3c653-fa65-4489-ba19-b92df6ebb422"
+                            },
+                            {
+                                "songName": "When You're Sad I'm Sad",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F08.%20When%20You%E2%80%99re%20Sad%20I%E2%80%99m%20Sad.mp3?alt=media&token=60d10a29-9910-4549-84fd-303e15fedfe7"
+                            },
+                            {
+                                "songName": "Marks On My Neck",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F09.%20Marks%20On%20My%20Neck.mp3?alt=media&token=e91fd533-7040-4dc8-8fc8-ca2029308dd2"
+                            },
+                            {
+                                "songName": "Tears On My Piano",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F10.%20Tears%20On%20My%20Piano.mp3?alt=media&token=fbd0e9a3-fdbb-4646-ad3c-723bc1c60a6c"
+                            },
+                            {
+                                "songName": "I Don't Think That I Like Her",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F11.%20I%20Don't%20Think%20That%20I%20Like%20Her.mp3?alt=media&token=5ebbf159-fb78-4ec9-ad62-432dd6487cec"
+                            },
+                            {
+                                "songName": "No More Drama",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FCharlie%20Puth%2FCharlie%2F12.%20No%20More%20Drama.mp3?alt=media&token=3594431a-c9d8-4364-810d-0b47d3480cea"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Justin Bieber",
+                "artistImage": "./Data/images/justinBieber.jpg",
+                "album": [
+                    {
+                        "albumName": "Purpose",
+                        "albumImage": "https://assets.teenvogue.com/photos/5645e838d2a2c3ca1f348d27/master/w_1600,c_limit/1444663448-justin.jpg",
+                        "songs": [
+                            {
+                                "songName": "Mark My Words",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F01.%20Mark%20My%20Words%20-%20(www.SongsLover.pk).mp3?alt=media&token=f397cad2-a807-4286-a4df-80732939e52f"
+                            },
+                            {
+                                "songName": "I'II Show You",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F02.%20I'll%20Show%20You%20-%20(www.SongsLover.pk).mp3?alt=media&token=46a2cbe2-44fc-4ba3-abdc-39d8779806d3"
+                            },
+                            {
+                                "songName": "What Do You Mean",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F03.%20What%20Do%20You%20Mean%20-%20(www.SongsLover.pk).mp3?alt=media&token=4594c0ad-8424-4b4c-8ea6-596367c3b11a"
+                            },
+                            {
+                                "songName": "Sorry",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F04.%20Sorry%20-%20(www.SongsLover.pk).mp3?alt=media&token=86ac4934-cb7e-4de0-b3af-99d3c6c80acf"
+                            },
+                            {
+                                "songName": "Love YourSelf",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F05.%20Love%20Yourself%20-%20(www.SongsLover.pk).mp3?alt=media&token=b6f43ae1-5151-4445-b4a2-1600c6912307"
+                            },
+                            {
+                                "songName": "Company",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F06.%20Company%20-%20(www.SongsLover.pk).mp3?alt=media&token=f53c9fe1-0b82-40d4-a51a-f691fdf1eb6f"
+                            },
+                            {
+                                "songName": "No Pressure",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F07.%20No%20Pressure%20(Feat.%20Big%20Sean)%20-%20(www.SongsLover.pk).mp3?alt=media&token=8997ddc5-198b-4f32-bfcd-19fa73c070fa"
+                            },
+                            {
+                                "songName": "No Sense",
+                                "songAudio": "https://firebasestorage.googleapis.com/v0/b/chordify3000.appspot.com/o/songs%2FJustin%20Bieber%2FPurpose%2F08.%20No%20Sense%20(Feat.%20Travis%20Scott)%20-%20(www.SongsLover.pk).mp3?alt=media&token=bf81a9bf-64e3-409e-b734-7c3bb124b82e"
+                            },
+                            {
+                                "songName": "The Feeling",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Life Is Worth Living",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/10. Life Is Worth Living - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Where Are U Now",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/11. Where Are U Now (Feat. Skrillex & Diplo) - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Children",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/12. Children (Feat. Skrillex) - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Purpose",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/13. Purpose - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Been You",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/14. Been You - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Get Used To Me",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/15. Get Used To Me - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "We Are",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/16. We Are (Feat. Nas) - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Trust",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/17. Trust - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "All In It",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/18. All In It - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "Hit The Ground",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/19. Hit the Ground - (www.SongsLover.pk).mp3"
+                            },
+                            {
+                                "songName": "The Most",
+                                "songAudio": "./Data/songs/Justin Bieber - Purpose - (www.SongsLover.pk)/20. The Most - (www.SongsLover.pk).mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Young Thug",
+                "artistImage": "./Data/images/youngThug.jpg",
+                "album": [
+                    {
+                        "albumName": "No, My Name Is Jeffery",
+                        "albumImage": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Jeffery_young_thug.jpg/220px-Jeffery_young_thug.jpg",
+                        "songs": [
+                            {
+                                "songName": "Wyclef Jean",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/01. Wyclef Jean - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Pick Up The Phone",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/02. Pick Up The Phone (Ft. Travis Scott & Quavo) - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Harambe",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/03. Harambe - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Swizz Beatz",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/04. Swizz Beatz - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Floyd Mayweather",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/05. Floyd Mayweather (Ft. Gunna & Gucci Mane) - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "RiRi",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/06. RiRi - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Guwop",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/07. Guwop (Ft. Quavo, Offset & Young Scooter) - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Future Swag",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/08. Future Swag - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Webbie",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/09. Webbie (Ft. Duke) - (www.SongsLover.com).mp3"
+                            },
+                            {
+                                "songName": "Pop Man",
+                                "songAudio": "./Data/songs/Young Thug - No, My Name Is Jeffery - (www.SongsLover.com)/10. Pop Man (Ft. Wyclef Jean) - (www.SongsLover.com).mp3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Post Malone",
+                "artistImage": "./Data/images/postMalone.jpg",
+                "album": [
+                    {
+                        "albumName": "Beerbongs and Bentleys",
+                        "albumImage": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Beerbongs_%26_Bentleys_by_Post_Malone.png/220px-Beerbongs_%26_Bentleys_by_Post_Malone.png",
+                        "songs": [
+                            {
+                                "songName": "92 Explorer",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Ball for Me",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Better Now",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Blame it On Me",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Candy Paint",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Jonestown Interlude",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Otherside",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Over Now",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Paranoid",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Psycho",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Rich",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Rockstar",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Same Bitches",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Spoil My Night",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Stay",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Suger Wraith",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Takin Shots",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Zack And Codeine",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            }
+                        ]
+                    },
+                    {
+                        "albumName": "Twelve Carat Toothache",
+                        "albumImage": "https://upload.wikimedia.org/wikipedia/en/0/03/Post_Malone_-_Twelve_Carat_Toothache.png",
+                        "songs": [
+                            {
+                                "songName": "Reputation",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Cooped Up",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Lemon Tree",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Wrapped Around Your Finger",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "I Like You",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "I Cannot Be",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Insane",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Love Hate Letter To Alcohol",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Wasting Angles",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Euthanasia",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "When I'm Alone",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "Waiting For A Miracle",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "One Right Now",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            },
+                            {
+                                "songName": "New Recording 12, Jan 3, 2020",
+                                "songAudio": "./Data/songs/Post Malone – Beerbongs and Bentleys-(FlexyOkay.com)/Post-Malone-92-Explorer-(FlexyOkay.com).mp3"
+                            }
+
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Taylor Swift",
+                "artistImage": "./Data/images/Taylorswift.jpg",
+                "album": [
+                    {
+                        "albumName": "Speak Now",
+                        "albumImage": "https://people.com/thmb/ZxlF1yRFzGVcEf3MD-ROHtak2aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/taylor-swift-albums-3-5831d0787fb94e94b56b89cd1d203689.jpg",
+                        "songs": [
+                            {
+                                "songName": "Mine",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Sparks Fly",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Back To December",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Speak Now",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Dear John",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Mean",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "The Story Of Us",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Never Grow Up",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Enchanted",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Better Than Revenge",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Innocent",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Haunted",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Last Kiss",
+                                "songAudio": ""
+                            }
+                        ]
+                    },
+                    {
+                        "albumName": "Midnights",
+                        "albumImage": "https://static.toiimg.com/thumb/msid-93845940,width-1280,resizemode-4/93845940.jpg",
+                        "songs": [
+                            {
+                                "songName": "Lovender Haze",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Moroon",
+                                "songAudio": "Anti-Hero"
+                            },
+                            {
+                                "songName": "Snow On The Beach",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "You,re On Your Own",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Midnight Rain",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Question",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Vigilante Shit",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Bejeweled",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Labyrinth",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Karma",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Sweet Nothing",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Mastermind",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "The Great War",
+                                "songAudio": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Weeknd",
+                "artistImage": "./Data/images/Weeknd.jpg",
+                "album": [
+                    {
+                        "albumName": "Star Boy",
+                        "albumImage": "./Data/images/Starboy.jpg",
+                        "songs": [
+                            {
+                                "songName": "Adieu",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Ban M Ke M",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Come Ova",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Control Me",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "I Got This",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Lanmou Pa Sifi",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "M Ap Sispann",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "M pa Gen Lot",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Min Nan Fwon",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Sa N Ap Fe",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Sanble Li Two Ta",
+                                "songAudio": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "artistName": "Guru Randhawa",
+                "artistImage": "https://static.toiimg.com/thumb/msid-82254048,width-1280,resizemode-4/82254048.jpg",
+                "album": [
+                    {
+                        "albumName": "Man Of The Moon",
+                        "albumImage": "https://static.toiimg.com/photo/msid-93711060/93711060.jpg",
+                        "songs": [
+                            {
+                                "songName": "Black Raat",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Fake Love",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Fayaah Fayaah",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Moon Rise",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Rona Rona",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Sings",
+                                "songAudio": ""
+                            },
+                            {
+                                "songName": "Tera Ki Khayal",
+                                "songAudio": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
